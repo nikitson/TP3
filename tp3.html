@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Profil Saya</title>
+</head>
+<body>
+
+    <!-- Bagian Foto Profil dan Video Perkenalan -->
+    <!-- Menggunakan tabel untuk mengatur posisi foto profil dan video perkenalan agar rapi dalam satu baris -->
+    <table border="1">
+        <tr>
+            <!-- Menggunakan img untuk menampilkan gambar foto profil -->
+            <!-- <img> digunakan untuk menampilkan gambar statis -->
+            <td><img src="12.jpg" alt="Foto Profil" width="270" height="200"></td>
+            <!-- Menggunakan tag video untuk menampilkan video perkenalan -->
+            <!-- <video> digunakan untuk menampilkan konten video dengan kontrol -->
+            <td>
+                <video width="300" height="200"  controls>
+                    <source src="123.mp4" type="video/mp4">
+                    Video tidak didukung.
+                </video>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Bagian Tentang Saya -->
+    <!-- <div> digunakan sebagai container untuk mengelompokkan konten bagian Tentang Saya -->
+    <div>
+        <!-- <h1> digunakan untuk judul utama halaman -->
+        <h1>Profil Pribadi</h1>
+        <!-- <h2> digunakan untuk sub-judul, menandakan bagian Tentang Saya -->
+        <h2>Tentang Saya</h2>
+        <!-- <p> digunakan untuk menampilkan paragraf teks tentang diri saya -->
+        <p>Halo! Saya Nikita Maulidya Edison, saat ini sedang berkuliah di Telkom University.</p>
+    </div>
+
+    <!-- Bagian Hobi dan Minat -->
+    <!-- <ul> digunakan untuk membuat daftar tidak berurut (unordered list) -->
+    <div>
+        <h2>Hobi dan Minat</h2>
+        <ul>
+            <!-- <li> digunakan untuk membuat item dalam daftar -->
+            <li>Suka K-pop</li>
+            <li>Suka menonton drama kolosal China</li>
+            <li>Suka mendengarkan musik</li>
+            <li>Suka membaca cerita fiksi</li>
+        </ul>
+    </div>
+
+    <!-- Bagian Hubungi Saya -->
+    <!-- Form digunakan untuk menerima input dari pengguna. Method POST digunakan untuk mengirim data -->
+    <div>
+        <h2>Hubungi Saya</h2>
+        <form action="kirim_pesan.php" method="POST">
+            <!-- Menggunakan input untuk menerima teks sebagai nama, email, dan pesan -->
+            <!-- <input> digunakan untuk membuat field input teks -->
+            <label for="nama">Nama:</label><br>
+            <input type="text" id="nama" name="nama" value="Nikita Maulidya Edison" readonly><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <!-- <button> digunakan untuk membuat tombol submit form -->
+            <button type="submit">Kirim Pesan</button>
+        </form>
+    </div>
+
+    <!-- Bagian Media Sosial -->
+    <!-- <a> digunakan untuk membuat hyperlink ke halaman media sosial -->
+    <div>
+        <h2>Media Sosial:</h2>
+        <a href="https://x.com">X</a> |
+        <a href="https://instagram.com">Instagram</a> |
+        <a href="https://tiktok.com">TikTok</a>
+    </div>
+
+</body>
+</html>
